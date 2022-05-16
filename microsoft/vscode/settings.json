@@ -1,0 +1,177 @@
+{
+    "python.insidersChannel": "off",
+    "python.analysis.cachingLevel": "None",
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*,plt.cm.*,cm.*",
+        "--enable=W0614",
+        "--ignored-classes=EasyDict",
+        "--enable= W0611"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "terminal.integrated.env.windows": {
+        "VsDevCmd": "\"D:\\Software\\Visual Studio\\Common7\\Tools\\VsDevCmd.bat\""
+    },
+    
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\system32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        // "/k",
+        // "%VsDevCmd%",
+        // "&&",
+        // "%windir%\\system32\\windowspowershell\\v1.0\\powershell.exe;"
+    ],
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // "terminal.integrated.shellArgs.windows": ["D:/Software/Visual Studio/Common7/Tools/VsDevCmd.bat"],
+    "editor.wordWrap": "on",
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.workspaceFolder": "d:\\Documents\\leetcode",
+    "C_Cpp.default.windowsSdkVersion": "10.0.17763.0",
+    "C_Cpp.default.includePath": [
+        "D:\\Software\\Visual Studio\\VC\\Tools\\MSVC\\14.25.28610\\include",
+        "D:\\Windows Kits\\10\\Include\\10.0.17763.0\\ucrt",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\include"
+    ],
+    "leetcode.hint.configWebviewMarkdown": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "leetcode.showLocked": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipes": [
+    
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex -> biber -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex",
+            ]
+        },
+        {
+            "name": "kaobook",
+            "tools": [
+                "pdflatex",
+                "cnoman",
+                "cindex",
+                "biber",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [{
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "cnoman",
+            "command": "makeindex",
+            "args": [
+                "%DOCFILE%.nlo",
+                "-s",
+                "nomencl.ist",
+                "-o",
+                "%DOCFILE%.nls"
+            ]
+        },
+        {
+            "name": "cindex",
+            "command": "makeindex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "mgloss",
+            "command": "makeglossaries",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }
+    ],
+    "code-runner.languageIdToFileExtensionMap": {
+    
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "python.languageServer": "Pylance",
+    "java.home": "D:\\Software\\java\\",
+    "python.defaultInterpreterPath": "D:\\Software\\miniconda3\\python.exe",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "cmake.configureOnOpen": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "jupyter.askForKernelRestart": false,
+    "markdown.marp.enableHtml": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "cSpell.userWords": [
+        "Langevin",
+        "autoregressive",
+        "bregman",
+        "concat",
+        "mle",
+        "pasm",
+        "reparametrization",
+        "softplus"
+    ],
+    "ltex.additionalRules.motherTongue": "en-GB",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "http.proxySupport": "off",
+    "terminal.integrated.inheritEnv": false,
+    "debug.disassemblyView.showSourceCode": false,
+
+}
